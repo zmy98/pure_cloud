@@ -1,0 +1,31 @@
+server:
+  port: 8110 # 服务端口
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.142.101.154:8848 # nacos服务地址
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: pure-system # 服务名
+  datasource: # mysql数据库连接
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://8.142.101.154:3306/srb_core?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    username: root
+    password: pure
+  redis:
+    host: 8.142.101.154
+    port: 6379
+    database: 0
+    password: pure #默认为空
+    timeout: 3000ms #最大等待时间，超时则抛出异常，否则请求一直等待
+mybatis-plus: #mybatis
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+# 设置日志级别
+logging:
+  level:
+    root: ERROR

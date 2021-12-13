@@ -1,0 +1,22 @@
+server:
+  port: 80 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: pure-gateway # 服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 8.142.101.154:8848 # nacos服务地址
+    gateway:
+      discovery:
+        locator:
+          enabled: true # gateway可以发现nacos中的微服务，并自动生成转发路由
+      routes:
+        - id: pure-system                            # 指定路由唯一标识
+#          uri: http://localhost:8110/ # 指定路由服务的地址
+          uri: lb://pure-system
+          predicates:
+            - Path=/system/**                      # 指定路由规则

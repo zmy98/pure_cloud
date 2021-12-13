@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MyBatisCodeHelperDatasource">
+    <option name="projectProfile">
+      <ProjectProfile>
+        <option name="addSerializeUid" value="true" />
+        <option name="generateService" value="true" />
+        <option name="generateServiceInterface" value="true" />
+        <option name="javaMapperPackage" value="com.pure.system.dao" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+        <option name="javaModelPackage" value="com.pure.system.model" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="pure_system" />
+        <option name="lombokDataAnnotation" value="true" />
+        <option name="mapperAnnotaion" value="true" />
+        <option name="moduleNameToPackageAndPathMap">
+          <map>
+            <entry key="pure_system">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.pure.system.dao" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+                  <option name="javaModelPacakge" value="com.pure.system.model" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.pure.system.servier" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+                  <option name="javaServicePackage" value="com.pure.system.servier.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/pure_system/src/main/java" />
+                  <option name="xmlPackage" value="com.pure.system.mapper" />
+                  <option name="xmlPath" value="F:\gitee\pure_cloud\pure_system\src\main\java" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="mybatisPlusIdType" value="AUTO" />
+        <option name="mybatisPlusStaticField" value="false" />
+        <option name="p3CComment" value="true" />
+        <option name="tableGenerateConfigs">
+          <map>
+            <entry key="srb_core:user_info">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="UserInfo" />
+                  <option name="moduleName" value="pure_system" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+          </map>
+        </option>
+        <option name="useSwagger" value="true" />
+        <option name="userMybatisPlus" value="true" />
+        <option name="xmlMapperPackage" value="com.pure.system.mapper" />
+        <option name="xmlMapperPath" value="F:\gitee\pure_cloud\pure_system\src\main\java" />
+      </ProjectProfile>
+    </option>
+  </component>
+</project>
